@@ -30,8 +30,8 @@ jobs:
             exit 1
           fi
 
-          if [ -z "${{ secrets.DOCKER_PASSWORD }}" ]; then
-            echo "DOCKER_PASSWORD is missing"
+          if [ -z "${{ secrets.DOCKER_TOKEN }}" ]; then
+            echo "DOCKER_TOKEN is missing"
             exit 1
           fi
 
